@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>neveron</title>
+        <link rel="stylesheet" href="main.css">
+        <script type="module" src="model-viewer.js"></script>
+    </head>
+    <body>
+        <div id="navbar">
+            <div id="logo"></div>
+            <div id="items">
+                <div id="product_box">
+                    <div id="product" class="decor">product</div>
+                    <button class="decor arrow arrow_up" id="product_up" onclick="myopen(this)">
+                        <span>&#8964</span>
+                    </button>
+                    <button class="decor arrow arrow_down" style="display:none;" id="product_down" onclick="myclose(this)">
+                        <span>&#8963;</span>
+                    </button>
+                </div>
+                <div id="solutions_box">
+                    <div id="solutions" class="decor">solutions</div>
+                    <button class="decor arrow arrow_up" id="solutions_up" onclick="myopen(this)">
+                        <span>&#8964</span>
+                    </button>
+                    <button class="decor arrow arrow_down" style="display:none;" id="solutions_down" onclick="myclose(this)">
+                        <span>&#8963;</span>
+                    </button>
+                </div>
+                <div id="resources_box">
+                    <div id="resources" class="decor">resources</div>
+                    <button class="decor arrow arrow_up" id="resources_up" onclick="myopen(this)">
+                        <span>&#8964</span>
+                    </button>
+                    <button class="decor arrow arrow_down" style="display:none;" id="resources_down" onclick="myclose(this)">
+                        <span>&#8963;</span>
+                    </button>
+                </div>
+                <div id="pricing" class="decor">pricing</div>
+                <div id="enterprise" class="decor">enterprise</div>
+            </div>
+            <div id="starts">
+                <div id="log" class="decor">log in</div>
+                <div id="start" class="decor">start for free</div>
+            </div>
+        </div>
+        <section id="hero_section">
+            <section id="left_hero">
+                <div id="left_hero_top_head" class="decor">ai-powered + no code + full control</div>
+                <div id="sub_head">
+                    <div id="box1" class="sub_head_decor">Build, launch & scale websites, apps &</div>
+                    <div id="box2">
+                        <div id="box21" class="sub_head_decor">AI tools</div>
+                        <div id="box_21" class="sub_head_decor">-</div>
+                        <div id="box22">faster.</div>
+                    </div>
+                </div>
+                <div id="sub_head_2">The all-in-one platform to bring your ideas to life. No code. No limits.</div>
+                <div id="btns">
+                    <button id="start_btn">Start building for free →</button>
+                    <button id="book">Book a demo</button>
+                </div>
+                <div id="last_sub">
+                    <div id="last_box1">
+                        <span>&#x2611</span>
+                        <div class="last_sub_decor">No credit card</div>
+                    </div>
+                    <div id="last_box2">
+                        <span>&#x2611</span>
+                        <div class="last_sub_decor">Free forever plan</div>
+                    </div>
+                    <div id="last_box3">
+                        <span>&#x2611</span>
+                        <div class="last_sub_decor">Cancel anytime</div>
+                    </div>
+                </div>
+            </section>
+            <section id="right_hero">
+                <div id="dash_box">
+                    <img src="dash.jpeg" alt="dashboard image" id="dash">
+                </div>
+                <div id="phone_box">
+                    <img src="phone.jpeg" alt="phone image" id="phone">
+                </div>
+            </section>
+        </section>
+        <div id="logo_3d_box">
+            <model-viewer src="logo.glb" alt="3D Animated Logo" auto-rotate camera-controls disable-zoom shadow-intensity="1" interaction-prompt="none"></model-viewer>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>

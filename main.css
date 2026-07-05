@@ -1,0 +1,303 @@
+body{
+    margin : 0px;
+    padding : 0px;
+    overflow-x: hidden;
+    overflow-y: visible !important;
+}
+#navbar{
+    //border : 1px solid black;
+    width : 100%;
+    height : 3vw;
+    //background-color : #494961;
+    color : white;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between !important;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    top: 0;
+    z-index: 10000;
+}
+#logo{
+    height : 90%;
+    width : 10%;
+    margin-left : 4vw;
+    border : 1px solid black;
+    transition : transform 1s ease;
+}
+#logo:active{
+    transform : scale(0.92);
+}
+#starts{
+    height : 90%;
+    width : 15%;
+    //border : 1px solid black;
+    margin-right : 2vw;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+}
+#log{
+    //border : 1px solid black;
+    width : 33%;
+    text-align : center;
+    padding-top : 4.5%;
+    transition : transform 1s ease;
+}
+#start{
+    border-radius : 5px;
+    //border : 1px solid black;
+    width : 60%;
+    background-color : #7764a0;
+    color : white;
+    text-align : center;
+    padding-top : 4.5%;
+    height : 2.35vw;
+    transition : transform 1s ease;
+}
+#start:active{
+    transform : scale(0.92);
+}
+#log:active{
+    transform : scale(0.92);
+}
+#items{
+    height : 70%;
+    width : 50%;
+    //border : 1px solid black;
+}
+.decor{
+    text-transform : capitalize;
+    color : black;
+    font-size: 1.25vw;
+}
+#items{
+    justify-content : space-between;
+    display : flex;
+    flex-direction : row;
+    padding-top : 7px;
+}
+#product_box,#resources_box,#solutions_box{
+    //border : 1px solid black;
+    display : flex;
+    flex-direction : row;
+    gap : 1vw;
+    padding-bottom : 0.5vw;
+}
+.arrow_up span{
+    display : inline-block;
+    transform : translateY(-0.65vw);
+    font-size : 1.45vw;
+}
+.arrow{
+    background-color : white;
+    border : none;
+}
+.arrow_shadow{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+#hero_section{
+    //margin-top : 7vw;
+    margin-top : 3vw;
+    //border : 1px solid black;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-around;
+}
+#left_hero{
+    //border : 1px solid black;
+    height : 36.5vw;
+    width : 40vw;
+    margin-left : 2vw;
+}
+#right_hero{
+    //border : 1px solid black;
+    height : 36.5vw;
+    width : 53vw;
+}
+#left_hero_top_head{
+    border : 1px solid #5a7a8582;
+    width :80%;
+    text-align : center;
+    border-radius : 15px;
+    text-transform : uppercase;
+    color : #7764a0;
+    font-weight : bold;
+    padding : 0.3vw;
+}
+#sub_head{
+    //border : 1px solid black;
+    display : flex;
+    flex-direction : column;
+    margin-top : 2.35vw;
+}
+#box2{
+    //border : 1px solid black;
+    display : flex;
+    flex-direction : row;
+    gap : 1vw;
+}
+#box21{
+    //border : 1px solid black;
+}
+.sub_head_decor{
+    font-size : 3.85vw;
+    font-weight : bolder;
+    font-family : sans-serif;
+}
+#box_21{
+    //border : 1px solid black;
+    width : 2.35vw;
+    text-align : center;
+    transform : scaleX(2);
+}
+#box22{
+    font-size : 3.75vw;
+    font-weight : bolder;
+    font-family : sans-serif;
+    font-style : italic;
+    background: linear-gradient(to right, #413bc6, #9f65f5, #b885ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+#sub_head_2{
+    //border : 1px solid black;
+    margin-right : 5vw;
+    font-size : 1.65vw;
+    margin-top : 2.35vw;
+}
+#btns{
+    //border : 1px solid black;
+    margin-top : 2.35vw;
+    height : 4.5vw;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-around;
+    margin-right : 5vw;
+}
+#start_btn,#book{
+    transition : transform 1s ease;
+    background-color : white;
+    border-radius : 5px;
+    font-size : 1.25vw;
+}
+#start_btn:active,#book:active{
+    transform : scale(0.92);
+}
+#start_btn{
+    background-color : #7764a0;
+    color : white;
+    width : 45%;
+    border : none;
+}
+#book{
+    width : 35%;
+    color : #7764a0;
+    font-weight : bold;
+    border : 1px solid #7764a0;
+}
+#last_sub{
+    //border : 1px solid black;
+    height : 2vw;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+    margin-top : 2.35vw;
+    margin-right : 1.5vw;
+}
+#last_box1,#last_box2,#last_box3{
+    width : 30%;
+    //border : 1px solid black;
+    display : flex;
+    flex-direction : row;
+    //justify-content : space-between;
+    gap : 5px;
+}
+.last_sub_decor{
+    font-size: 1.25vw; 
+    width : 80%;
+    padding-top : 0.25vw;
+    color : #7764a0;
+}
+#last_box1 span,#last_box2 span,#last_box3 span{
+    font-size: 1.25vw;
+    color : #7764a0;
+}
+@media (max-width: 768px){
+    #hero_section{
+        flex-direction : column;
+        gap :5vw;
+        align-items : center;
+    }
+    #left_hero{
+        width : 80%;
+        height : 30vw;
+    }
+    #right_hero{
+        width : 60%;
+        height : 30vw;
+        margin-left : 2vw;
+    }
+    #phone{
+        border-radius : 10px !important;
+    }
+    #phone_box{
+        transform : translateY(-27px);
+    }
+}
+
+#right_hero {
+    perspective: 3000px;
+    margin-right : 4vw;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+    transform : translateY(-15px);
+}
+#dash_box {
+    width : 100%;
+    height : 90%;
+    margin-top : 1.5vw;
+    overflow : visible;
+    transform-style: preserve-3d;
+}
+#phone_box {
+    width : 20%;
+    height : 55%;
+    margin-top : 7vw;
+    overflow : visible;
+    transform-style: preserve-3d;
+    margin-left: -10vw; 
+}
+#dash {
+    width: 100%;
+    height: 100%;
+    border-radius : 15px;
+    
+    transform: rotateY(-34deg) rotateX(0deg) rotateZ(5deg);
+    background: #ffffff;
+    border: 1px solid rgba(220, 210, 255, 0.6);
+    box-shadow: -15px 25px 40px rgba(0, 0, 0, 0.05),-40px 60px 90px rgba(120, 90, 230, 0.22);
+}
+#phone {
+    width: 100%;
+    height: 100%;
+    border-radius : 20px;
+    transform: rotateY(-34deg) rotateX(0deg) rotateZ(5deg) translateZ(80px) translateY(40px) translateX(50px);
+    filter: drop-shadow(30px 40px 50px rgba(0, 0, 0, 0.3));
+}
+#logo_3d_box{
+    z-index : 1000;
+    position: absolute;
+    border : 1px solid black;
+    height : 13.5vw;
+    width : 13.5vw;
+    transform : translateX(39vw) translateY(-16.5vw);
+}
+#logo_3d_box model-viewer{
+    display: block;
+    background-color: transparent !important;
+    --poster-color: transparent;
+}
