@@ -223,7 +223,7 @@ body{
     font-size: 1.25vw;
     color : #7764a0;
 }
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     #hero_section{
         flex-direction : column;
         gap :5vw;
