@@ -5,10 +5,9 @@ body{
     overflow-y: visible !important;
 }
 #navbar{
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     width : 100%;
     height : 3vw;
-    //background-color : #494961;
     color : white;
     display : flex;
     flex-direction : row;
@@ -31,14 +30,14 @@ body{
 #starts{
     height : 90%;
     width : 15%;
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     margin-right : 2vw;
     display : flex;
     flex-direction : row;
     justify-content : space-between;
 }
 #log{
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     width : 33%;
     text-align : center;
     padding-top : 4.5%;
@@ -46,7 +45,7 @@ body{
 }
 #start{
     border-radius : 5px;
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     width : 60%;
     background-color : #7764a0;
     color : white;
@@ -64,7 +63,7 @@ body{
 #items{
     height : 70%;
     width : 50%;
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
 }
 .decor{
     text-transform : capitalize;
@@ -78,7 +77,7 @@ body{
     padding-top : 7px;
 }
 #product_box,#resources_box,#solutions_box{
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     display : flex;
     flex-direction : row;
     gap : 1vw;
@@ -97,21 +96,20 @@ body{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 #hero_section{
-    //margin-top : 7vw;
     margin-top : 3vw;
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     display : flex;
     flex-direction : row;
     justify-content : space-around;
 }
 #left_hero{
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     height : 36.5vw;
     width : 40vw;
     margin-left : 2vw;
 }
 #right_hero{
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     height : 36.5vw;
     width : 53vw;
 }
@@ -126,19 +124,19 @@ body{
     padding : 0.3vw;
 }
 #sub_head{
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     display : flex;
     flex-direction : column;
     margin-top : 2.35vw;
 }
 #box2{
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     display : flex;
     flex-direction : row;
     gap : 1vw;
 }
 #box21{
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
 }
 .sub_head_decor{
     font-size : 3.85vw;
@@ -146,7 +144,7 @@ body{
     font-family : sans-serif;
 }
 #box_21{
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     width : 2.35vw;
     text-align : center;
     transform : scaleX(2);
@@ -163,13 +161,13 @@ body{
     color: transparent;
 }
 #sub_head_2{
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     margin-right : 5vw;
     font-size : 1.65vw;
     margin-top : 2.35vw;
 }
 #btns{
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     margin-top : 2.35vw;
     height : 4.5vw;
     display : flex;
@@ -199,7 +197,7 @@ body{
     border : 1px solid #7764a0;
 }
 #last_sub{
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     height : 2vw;
     display : flex;
     flex-direction : row;
@@ -209,7 +207,7 @@ body{
 }
 #last_box1,#last_box2,#last_box3{
     width : 30%;
-    //border : 1px solid black;
+    /*border : 1px solid black;*/
     display : flex;
     flex-direction : row;
     //justify-content : space-between;
