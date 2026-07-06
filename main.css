@@ -244,6 +244,10 @@ body{
     #phone_box{
         transform : translateY(-27px);
     }
+    #logo_3d_box{
+        display : inline-block;
+        transform : translateY(-25.5vw) translateX(5.5vw) !important;
+    }
 }
 
 #right_hero {
