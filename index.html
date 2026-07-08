@@ -5,7 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css">
-        <script type="module" src="model-viewer.js"></script>
+        <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+        </script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -23,26 +30,9 @@
                         <span>&#8963;</span>
                     </button>
                 </div>
-                <div id="solutions_box">
-                    <div id="solutions" class="decor">solutions</div>
-                    <button class="decor arrow arrow_up" id="solutions_up" onclick="myopen(this)">
-                        <span>&#8964</span>
-                    </button>
-                    <button class="decor arrow arrow_down" style="display:none;" id="solutions_down" onclick="myclose(this)">
-                        <span>&#8963;</span>
-                    </button>
-                </div>
-                <div id="resources_box">
-                    <div id="resources" class="decor">resources</div>
-                    <button class="decor arrow arrow_up" id="resources_up" onclick="myopen(this)">
-                        <span>&#8964</span>
-                    </button>
-                    <button class="decor arrow arrow_down" style="display:none;" id="resources_down" onclick="myclose(this)">
-                        <span>&#8963;</span>
-                    </button>
-                </div>
-                <div id="pricing" class="decor">pricing</div>
-                <div id="enterprise" class="decor">enterprise</div>
+                <div id="price" class="decor">price</div>
+                <div id="about" class="decor">about us</div>
+                <div id="faq" class="decor">FAQs</div>
             </div>
             <div id="starts">
                 <div id="log" class="decor">log in</div>
@@ -61,8 +51,8 @@
                 </div>
                 <div id="sub_head_2">The all-in-one platform to bring your ideas to life. No code. No limits.</div>
                 <div id="btns">
-                    <button id="start_btn">Start building for free →</button>
                     <button id="book">Book a demo</button>
+                    <button id="know">Know about us</button>
                 </div>
             </section>
             <section id="right_hero">
@@ -75,8 +65,9 @@
             </section>
         </section>
         <div id="logo_3d_box">
-            <model-viewer src="logo.glb" alt="3D Animated Logo" auto-rotate camera-controls disable-zoom shadow-intensity="1" interaction-prompt="none"></model-viewer>
+            <div id="canvas-container"></div>
         </div>
+        <script src="main.js"></script>
+        <script type="module" src="model.js"></script>
     </body>
-    <script src="main.js"></script>
 </html>

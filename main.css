@@ -54,8 +54,8 @@ button{
     backdrop-filter:blur(25px) saturate(160%);
     -webkit-backdrop-filter:blur(25px) saturate(160%);
     box-shadow:
-        0 20px 30px -5px rgba(0,0,0,.3),
-        0 10px 15px -5px rgba(0,0,0,.2);
+    0 12px 20px -5px rgba(0, 0, 0, 0.12),
+    0 6px 10px -4px rgba(0, 0, 0, 0.08);
 }
 #starts::after{
     content:"";
@@ -117,7 +117,9 @@ button{
     background: rgba(225,220,240,.85);
     backdrop-filter: blur(25px) saturate(160%);
     -webkit-backdrop-filter: blur(25px) saturate(160%);
-    box-shadow:0 20px 30px -5px rgba(0,0,0,.30),0 10px 15px -5px rgba(0,0,0,.20);
+    box-shadow:
+    0 12px 20px -5px rgba(0, 0, 0, 0.12),
+    0 6px 10px -4px rgba(0, 0, 0, 0.08);
 }
 #items::after{
     content:"";
@@ -144,14 +146,15 @@ button{
     white-space: nowrap;
     font-weight : 500;
 }
-#product_box,#resources_box,#solutions_box{
+/*#resources_box,#solutions_box*/
+#product_box{
     /*border : 1px solid black;*/
     display : flex;
     flex-direction : row;
     gap : 1.5px;
     margin-top : 0.35vw;
 }
-#pricing,#enterprise{
+#about,#faq,#price{
     margin-top : 0.35vw;
     margin-bottom : 1vw;
 }
@@ -257,31 +260,31 @@ button{
     margin-right : 8vw;
     flex-wrap: wrap;
 }
-#start_btn,#book{
+#book,#know{
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     background-color : white;
     border-radius : 7px;
     font-size : 1.05vw;
     font-weight: 600;
 }
-#start_btn:active,#book:active{
+#book:active,#know:active{
     transform : scale(0.95);
 }
-#start_btn{
+#book{
     background-color : #7764a0;
     color : white;
-    width : 50%;
+    width : 40%;
     border : none;
     box-shadow: 0 10px 24px rgba(119, 100, 160, 0.28);
 }
-#book{
+#know{
     width : 35%;
     color : #7764a0;
     border : 1px solid #7764a0;
     font-weight : 650;
 }
-#book:hover{ background: rgba(119, 100, 160, 0.06); }
-#start_btn:hover{ background-color: var(--accent-dark); }
+#know:hover{ background: rgba(119, 100, 160, 0.06); }
+#book:hover{ background-color: var(--accent-dark); }
 
 @media screen and (max-width: 768px){
     #hero_section{
@@ -354,13 +357,13 @@ button{
     cursor : pointer;
     z-index : 1000;
     position: absolute;
-    border : 1px solid black;
-    height : 10.5vw;
-    width : 10.5vw;
-    transform : translateX(52vw) translateY(-21vw);
+    /*border : 1px solid black;*/
+    height : 23vw;
+    width : 23vw;
+    transform : translateX(46vw) translateY(-29vw);
+    overflow: hidden;
 }
-#logo_3d_box model-viewer{
-    display: block;
-    background-color: transparent !important;
-    --poster-color: transparent;
+#canvas-container{
+    width:100%;
+    height:100%;
 }
