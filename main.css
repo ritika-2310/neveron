@@ -39,18 +39,41 @@ button{
     transform : scale(0.92);
 }
 #starts{
-    border-radius : 15px;
-    padding-left : 0.15%;
-    padding-right : 0.5%;
-    height : 90%;
-    width : 15%;
-    border : 1px solid darkgrey;
-    margin-right : 4vw;
-    display : flex;
-    flex-direction : row;
-    justify-content : space-around;
-    box-shadow: 0 20px 30px -5px rgba(0, 0, 0, 0.3), 0 10px 15px -5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius:15px;
+    padding-left:0.15%;
+    padding-right:0.5%;
+    height:90%;
+    width:15%;
+    margin-right:4vw;
+    display:flex;
+    justify-content:space-around;
+    background:rgba(225,220,240,.55);
+
+    backdrop-filter:blur(25px) saturate(160%);
+    -webkit-backdrop-filter:blur(25px) saturate(160%);
+    box-shadow:
+        0 20px 30px -5px rgba(0,0,0,.3),
+        0 10px 15px -5px rgba(0,0,0,.2);
 }
+#starts::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:inherit;
+    background:url("noise.png");
+    background-repeat:repeat;
+    background-size:180px;
+    opacity:0.2;
+    z-index:1;
+    pointer-events:none;
+}
+#log,#start{
+    position:relative;
+    z-index:2;
+}
+
 #log{
     /*border : 1px solid black;*/
     font-weight: 600;
@@ -60,7 +83,7 @@ button{
     transition : transform 1s ease;
 }
 #start{
-    border-radius : 7px;
+    border-radius : 14px;
     /*border : 1px solid black;*/
     width : 60%;
     background-color : #7764a0;
@@ -81,15 +104,37 @@ button{
     transform : scale(0.92);
 }
 #items{
-    border : 1px solid darkgrey;
-    height : 70%;
-    width : 40%;
-    justify-content : space-around;
-    display : flex;
-    flex-direction : row;
-    padding-top : 7px;
-    border-radius : 15px;
-    box-shadow: 0 20px 30px -5px rgba(0, 0, 0, 0.3), 0 10px 15px -5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    height: 70%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 7px;
+    border-radius: 15px;
+    background: rgba(225,220,240,.85);
+    backdrop-filter: blur(25px) saturate(160%);
+    -webkit-backdrop-filter: blur(25px) saturate(160%);
+    box-shadow:0 20px 30px -5px rgba(0,0,0,.30),0 10px 15px -5px rgba(0,0,0,.20);
+}
+#items::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:inherit;
+    background:url("noise.png");
+    background-repeat:repeat;
+    background-size:180px;
+    opacity:.2;
+    pointer-events:none;
+    z-index:1;
+}
+#items > *{
+    /*for all the childern of items*/
+    position: relative;
+    z-index: 2;
 }
 .decor{
     text-transform : capitalize;
@@ -104,6 +149,11 @@ button{
     display : flex;
     flex-direction : row;
     gap : 1.5px;
+    margin-top : 0.35vw;
+}
+#pricing,#enterprise{
+    margin-top : 0.35vw;
+    margin-bottom : 1vw;
 }
 .arrow_up span{
     display : inline-block;
@@ -119,7 +169,7 @@ button{
     height : 100%;
 }
 .arrow{
-    background-color : white;
+    background-color : transparent;
     border : none;
 }
 .arrow_shadow{
@@ -307,7 +357,7 @@ button{
     border : 1px solid black;
     height : 10.5vw;
     width : 10.5vw;
-    transform : translateX(44vw) translateY(-21vw);
+    transform : translateX(52vw) translateY(-21vw);
 }
 #logo_3d_box model-viewer{
     display: block;
