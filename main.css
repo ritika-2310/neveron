@@ -24,7 +24,7 @@ button{
     justify-content : space-between !important;
     padding-top : 10px;
     padding-bottom : 10px;
-    top: 0;
+    margin-top: 0.75vw;
     z-index: 1000;
 }
 #logo{
@@ -140,7 +140,7 @@ button{
     background:url("noise.png");
     background-repeat:repeat;
     background-size:180px;
-    opacity:.2;
+    opacity:.4;
     pointer-events:none;
     z-index:1;
 }
@@ -159,7 +159,6 @@ button{
 }
 /*#resources_box,#solutions_box*/
 #product_box{
-    /*border : 1px solid black;*/
     display : flex;
     flex-direction : row;
     gap : 1.5px;
@@ -191,38 +190,33 @@ button{
 }
 #hero_section{
     margin-top : 3.5vw;
-    /*border : 1px solid black;*/
     display : flex;
     flex-direction : row;
     justify-content : space-around;
+    height : 31vw;
+    overflow:visible;
 }
 #left_hero{
-    /*border : 1px solid black;*/
-    height : 36.5vw;
     width : 40vw;
     margin-left : 4vw;
 }
 #right_hero{
     /*border : 1px solid black;*/
-    height : 36.5vw;
+    height : 33vw;
     width : 46vw;
+    overflow:visible;
 }
 #sub_head{
-    /*border : 1px solid black;*/
     display : flex;
     flex-direction : column;
     margin-top : 3vw;
 }
 #box2{
-    /*border : 1px solid black;*/
     display : flex;
     flex-direction : row;
     gap : 1vw;
     flex-wrap: wrap;
     align-items: baseline;
-}
-#box21{
-    /*border : 1px solid black;*/
 }
 .sub_head_decor{
     font-size : 3.85vw;
@@ -232,19 +226,17 @@ button{
     line-height: 1.08;
 }
 #box_21{
-    /*border : 1px solid black;*/
     font-weight : 750;
     width : 2.35vw;
     text-align : center;
     transform : scaleX(2);
 }
-#box22{
+#box_22{
     line-height: 1.08;
     font-size : 3.85vw;
     font-weight : 750;
     font-family: var(--font-display);
     letter-spacing: -0.01em;
-    //font-size : 3.75vw;
     font-style : italic;
     background: linear-gradient(to right, #413bc6, #9f65f5, #b885ff);
     -webkit-background-clip: text;
@@ -253,7 +245,6 @@ button{
     color: transparent;
 }
 #sub_head_2{
-    /*border : 1px solid black;*/
     margin-right : 5vw;
     font-size : 1.3vw;
     margin-top : 1.5vw;
@@ -262,7 +253,6 @@ button{
     color : #757575;
 }
 #btns{
-    /*border : 1px solid black;*/
     margin-top : 1.75vw;
     height : 3vw;
     display : flex;
@@ -346,23 +336,44 @@ button{
     transform-style: preserve-3d;
     margin-left: -10vw; 
 }
+#wrapper{
+    position: relative;
+    width:fit-content;
+    height:fit-content;
+    transform-style:preserve-3d;
+    transform-origin:center center;
+    will-change: transform;
+    display:flex;
+    flex-direction : row;
+    justify-content : space-between;
+    transform: rotateY(-34deg) rotateZ(5.5deg) translateX(0px) translateY(0px);
+}
 #dash {
-    margin-left : 6.5vw;
+    margin-left : 5vw;
     width: 90%;
     height: 100%;
     border-radius : 15px;
-    
-    transform: rotateY(-34deg) rotateX(0deg) rotateZ(3deg);
     background: #ffffff;
     border: 1px solid rgba(220, 210, 255, 0.6);
-    box-shadow: -15px 25px 40px rgba(0, 0, 0, 0.05),-40px 60px 90px rgba(120, 90, 230, 0.22);
-}
+    box-shadow: -15px 25px 40px rgba(0, 0, 0, 0.05),-40px 60px 90px rgba(120, 90, 230, 0.22);}
 #phone {
     width: 100%;
     height: 100%;
     border-radius : 20px;
-    transform: rotateY(-34deg) rotateX(0deg) rotateZ(3deg) translateZ(80px) translateY(-20px) translateX(80px);
+    transform: translateZ(80px) translateY(-25px) translateX(80px);
     filter: drop-shadow(30px 40px 50px rgba(0, 0, 0, 0.3));
+}
+#wrapper,
+#dash,
+#phone{
+    backface-visibility:hidden;
+}
+#transition_space{
+    height : 15vw;
+    width : 50vw;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : -3vw;
 }
 #logo_3d_box{
     cursor : pointer;
@@ -377,4 +388,109 @@ button{
 #canvas-container{
     width:100%;
     height:100%;
+}
+#service{
+    height : 30vw;
+    width : 98%;
+    margin-left : auto;
+    margin-right : auto;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+}
+#left_serv{
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+    height : 100%;
+    width : 15%;
+}
+#right_serv{
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+    height : 100%;
+    width : 15%;
+}
+#mid_serv{
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+    height : 100%;
+    width : 30%;
+}
+#serv_box1{
+    height : 35%;
+}
+#serv_box2{
+    height : 35%;
+}
+#serv_head{
+    font-size : 4vw;
+    font-weight : 750;
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    text-align : center;
+    text-transform : capitalize;
+    margin-top : 8vw;
+}
+#serv_box3{
+    height : 35%;
+    width : 52%;
+    margin-left : auto;
+    margin-right : auto;
+}
+#serv_box4{
+    height : 35%;
+}
+#serv_box5{
+    height : 35%;
+}
+#eg{
+    background-color : blue;
+    width : 100%;
+    height : 20vw;
+    margin-top : 2vw;
+}
+.serv_box{
+    border : 1px solid black;
+    width : 100%;
+    height : 100%;
+    z-index : -1;
+    border-radius : 15px;
+}
+.serv:hover .serv_box{
+    visibility : hidden;
+}
+.serv_box_hov{
+    border-radius : 15px;
+    width : 100%;
+    height : 108%;
+    color : white;
+    z-index : 1;
+    margin-top : -74%;
+    background: linear-gradient(135deg, #dfcffc 0%, #d7c1f9 45%, #b5a6cb 100%);
+    backdrop-filter: blur(25px) saturate(160%);
+    -webkit-backdrop-filter: blur(25px) saturate(160%);
+    box-shadow:
+    0 12px 20px -5px rgba(0, 0, 0, 0.12),
+    0 6px 10px -4px rgba(0, 0, 0, 0.08) !important;
+    visibility : hidden;
+}
+.serv:hover .serv_box_hov{
+    visibility: visible;
+}
+
+.serv_box_hov::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:inherit;
+    background:url("noise.png");
+    background-repeat:repeat;
+    background-size:100%;
+    opacity:.7;
+    pointer-events:none;
+    z-index:1;
 }
