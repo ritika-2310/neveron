@@ -214,6 +214,7 @@ button{
 #left_hero{
     width : 40vw;
     margin-left : 4vw;
+    margin-top : 3vw;
 }
 #right_hero{
     /*border : 1px solid black;*/
@@ -397,7 +398,7 @@ button{
     /*border : 1px solid black;*/
     height : 23vw;
     width : 23vw;
-    transform : translateX(46vw) translateY(-24vw);
+    transform : translateX(42vw) translateY(-22vw);
     overflow: hidden;
 }
 #canvas-container{

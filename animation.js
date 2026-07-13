@@ -26,7 +26,7 @@ gsap.timeline({
 })
 .to(wrapper,{
     x:moveX-20,
-    y:moveY+30,
+    y:moveY+50,
     rotationY:0,
     rotationZ:0,
     rotationX:0,
