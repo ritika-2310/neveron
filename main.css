@@ -17,6 +17,7 @@ button{
 }
 #navbar{
     /*border : 1px solid black;*/
+    position : fixed;
     width : 100%;
     height : 2.5vw;
     display : flex;
@@ -24,7 +25,7 @@ button{
     justify-content : space-between !important;
     padding-top : 10px;
     padding-bottom : 10px;
-    margin-top: 0.75vw;
+    margin-top: -2.7vw;
     z-index: 1000;
 }
 #logo{
@@ -120,6 +121,15 @@ button{
     box-shadow:
     0 12px 20px -5px rgba(0, 0, 0, 0.12),
     0 6px 10px -4px rgba(0, 0, 0, 0.08) !important;
+
+    animation-range : exit 0% exit 1px;
+    animation : fadeout steps(1) both;
+    animation-timeline : view();
+    transition: opacity 0.1s ease-in-out;
+}
+#items:hover {
+  opacity: 1 !important;
+    box-shadow : none;
 }
 #items::before{
     content:"";
@@ -148,6 +158,11 @@ button{
     /*for all the childern of items*/
     position: relative;
     z-index: 2;
+}
+@keyframes fadeout {
+  to{
+    opacity: 0;
+  }
 }
 .decor{
     text-transform : capitalize;
@@ -382,7 +397,7 @@ button{
     /*border : 1px solid black;*/
     height : 23vw;
     width : 23vw;
-    transform : translateX(46vw) translateY(-29vw);
+    transform : translateX(46vw) translateY(-24vw);
     overflow: hidden;
 }
 #canvas-container{
@@ -493,4 +508,63 @@ button{
     opacity:.7;
     pointer-events:none;
     z-index:1;
+}
+#icons{
+    margin-top : 1.5vw;
+    width : 98%;
+    height : 45vw;
+    margin-left : auto;
+    margin-right : auto;
+    display : flex;
+    flex-direction : column
+}
+#icon_heads{
+    position : relative;
+    display : flex;
+    flex-direction : column;
+    gap : 1vw;
+    z-index : -100;
+    width : 40vw;
+    height :25vw;
+    margin-top : 10vw;
+    margin-left : auto;
+    margin-right : auto;
+}
+.icon_heads{
+    border : 1px solid black;
+    overflow: hidden;
+    position: relative;
+    background-color : transparent;
+    height : 20%;
+    text-align : center;
+}
+.icon_heads > *{
+    position: relative;
+}
+#icons_box{
+    position : relative;
+    display: grid;
+    grid-template-areas: "layer";
+    place-items: center;
+    z-index : 1;
+    margin-top : -22.5vw;
+    height : 20vw;
+    width : 20vw;
+    margin-left : auto;
+    margin-right : auto;
+}
+#icons_box>*{
+    overflow: hidden;
+    position: relative;
+    width : 15vw;
+    height : 15vw;
+    grid-area: layer;
+}
+.icon{
+    border : 1px solid black;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : 5vw;
+    height : 5vw;
+    width : 5vw;
 }
