@@ -565,8 +565,7 @@ button{
     height : 15vw;
     grid-area: layer;
 }
-.icon{
-    border : 1px solid black;
+.icon__{
     margin-left : auto;
     margin-right : auto;
     margin-top : 5vw;
@@ -574,23 +573,21 @@ button{
     width : 5vw;
     color : white;
 }
-.white-icon {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-}
 #icon1{
     background-color : #ffadad;
 }
-#icon11{
-    border : 1px solid black;
-    height : 50%;
-    width : 50%;
-    /*
-    background-image : url("icon1.svg");
-    background-repeat: no-repeat;
-    background-position: center; 
-    color : black;
-    background-size: contain;
-    */
+.icons__{
+    margin-left : auto;
+    margin-right : auto;
+    height : 90%;
+    width : 90%;
+}
+.white-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  width : 100%;
+  height : 100%;
+  display : block;
+  object-fit : contain;
 }
 #icon2{
     background-color : #ffd6a5;
