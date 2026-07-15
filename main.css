@@ -223,16 +223,12 @@ button{
     overflow:visible;
 }
 #sub_head{
+    margin-left : 1.5vw;
     display : flex;
     flex-direction : column;
     margin-top : 3vw;
-}
-#box2{
-    display : flex;
-    flex-direction : row;
-    gap : 1vw;
-    flex-wrap: wrap;
-    align-items: baseline;
+    justify-content : space-around;
+    height : 27vh
 }
 .sub_head_decor{
     font-size : 3.85vw;
@@ -241,17 +237,9 @@ button{
     letter-spacing: -0.01em;
     line-height: 1.08;
 }
-#box_21{
-    font-weight : 750;
-    width : 2.35vw;
-    text-align : center;
-    transform : scaleX(2);
-}
-#box_22{
+#box__3{
     line-height: 1.08;
-    font-size : 3.85vw;
     font-weight : 750;
-    font-family: var(--font-display);
     letter-spacing: -0.01em;
     font-style : italic;
     background: linear-gradient(to right, #413bc6, #9f65f5, #b885ff);
@@ -387,10 +375,6 @@ button{
 #transition_space{
     height : 15vw;
     width : 100%;
-    //margin-top : -3vw;
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(40, 37, 49);
 }
 #logo_3d_box{
     cursor : pointer;
@@ -412,19 +396,7 @@ button{
     display : flex;
     flex-direction : row;
     justify-content : space-between;
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(40, 37, 49);
 }
-/*
-#service::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(20,22,26,0.35) 0%, rgba(20,22,26,0.56) 78%, rgba(20,22,26,0.77) 100%);
-    pointer-events: none;
-}
-    */
 #left_serv{
     display : flex;
     flex-direction : column;
@@ -557,18 +529,18 @@ button{
     flex-direction : column;
     gap : 1vw;
     z-index : -100;
-    width : 40vw;
+    width : 55vw;
     height :25vw;
     margin-top : 10vw;
     margin-left : auto;
     margin-right : auto;
+    gap:2vw;
 }
 .icon_heads{
-    border : 1px solid black;
     overflow: hidden;
     position: relative;
     background-color : transparent;
-    height : 20%;
+    height : 15%;
     text-align : center;
 }
 .icon_heads > *{
@@ -600,6 +572,43 @@ button{
     margin-top : 5vw;
     height : 5vw;
     width : 5vw;
+    color : white;
+}
+.white-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+#icon1{
+    background-color : #ffadad;
+}
+#icon11{
+    border : 1px solid black;
+    height : 50%;
+    width : 50%;
+    /*
+    background-image : url("icon1.svg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    color : black;
+    background-size: contain;
+    */
+}
+#icon2{
+    background-color : #ffd6a5;
+}
+#icon3{
+    background-color : #fdffb6;
+}
+#icon4{
+    background-color : #caffbf;
+}
+#icon5{
+    background-color : #9bf6ff;
+}
+#icon6{
+    background-color : #bdb2ff;
+}
+#icon7{
+    background-color : #3d5a6b;
 }
 .footer-perspective-wrapper {
     position: relative;

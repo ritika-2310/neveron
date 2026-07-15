@@ -3,22 +3,31 @@
     src: url(Ethnocentric-Regular.otf) format("opentype");
     font-weight: 400;
 }
+.sub_head1_decor{
+    font-family: "Heading";
+    font-size : 3.4vw;
+}
+.icon_heads{
+    font-family: 'Heading';
+    font-size : 2.65vw;
+    padding-top : 1vw;
+}
 #heading{
     font-family: 'Heading';
     font-size: 50px;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .faq-container {
     border-top: 1px solid #333;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
+    height : 62vh;
 }
-
 .faq-item {
     border-bottom: 1px solid #ccc;
-    padding: 20px 50px;
+    padding: 7px 50px;
     cursor: pointer;
 }
 
@@ -29,6 +38,7 @@
 }
 
 summary {
+    height : 10vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -42,7 +52,13 @@ summary::-webkit-details-marker {
     display: none;
 }
 
-.icon {
+.icon_{
+    display : flex;
+    justify-content : center;
+    padding-top : 2.75vh;
+    height : 7vh;
+    width : 8.5vh;
+    border : 1px solid black;
     font-size: 24px;
     font-weight: 300;
 }
