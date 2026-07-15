@@ -386,10 +386,11 @@ button{
 }
 #transition_space{
     height : 15vw;
-    width : 50vw;
-    margin-left : auto;
-    margin-right : auto;
-    margin-top : -3vw;
+    width : 100%;
+    //margin-top : -3vw;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(40, 37, 49);
 }
 #logo_3d_box{
     cursor : pointer;
@@ -407,13 +408,23 @@ button{
 }
 #service{
     height : 30vw;
-    width : 98%;
-    margin-left : auto;
-    margin-right : auto;
+    width : 100%;
     display : flex;
     flex-direction : row;
     justify-content : space-between;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(40, 37, 49);
 }
+/*
+#service::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(20,22,26,0.35) 0%, rgba(20,22,26,0.56) 78%, rgba(20,22,26,0.77) 100%);
+    pointer-events: none;
+}
+    */
 #left_serv{
     display : flex;
     flex-direction : column;
@@ -442,14 +453,16 @@ button{
     height : 35%;
 }
 #serv_head{
-    font-size : 4vw;
+    width : 120%;
+    font-size : 3vw;
     font-weight : 750;
     font-family: var(--font-display);
     letter-spacing: -0.01em;
     line-height: 1.25;
     text-align : center;
     text-transform : capitalize;
-    margin-top : 8vw;
+    margin-top : 7.5vw;
+    margin-left : -2.5vw;
 }
 #serv_box3{
     height : 35%;
@@ -588,15 +601,27 @@ button{
     height : 5vw;
     width : 5vw;
 }
+.footer-perspective-wrapper {
+    position: relative;
+    width: 100%;
+}
 #footer{
-    //height : 45vw;
+    max-height : 47vw;
+    overflow: hidden;
+    position : sticky;
+    z-index : 1;
+    top: calc(100vh - 47vw);
+    //bottom : 0px;
+}
+#footer_scroll{
+    height : 45vw;
     width : 100%;
     border : 1px solid black;
-    z-index : 100;
+    z-index : 2;
     position: relative;
     background: rgba(15, 15, 20, 0.15); 
     backdrop-filter: blur(12px) saturate(180%);     
     -webkit-backdrop-filter: blur(12px) saturate(180%); 
     border-top: 1px solid rgba(255, 255, 255, 0.12);
-    margin-top : -45vw;
+    margin-top : 0;
 }
